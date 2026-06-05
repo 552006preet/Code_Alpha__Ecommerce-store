@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Details - ShopEasy</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<nav class="navbar">
+    <div class="logo">ShopEasy</div>
+    <div class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="#products">Products</a>
+        <a href="cart.html">Cart (<span id="cart-count">0</span>)</a>
+        <a href="login.html" id="login-link">Login</a>
+        <a href="#" id="logout-link" style="display:none;" onclick="logoutUser()">Logout</a>
+    </div>
+</nav>
+
+<br>
+<div id="product-detail-container" style="max-width:900px; margin: 30px auto; padding: 0 20px;">
+    <!-- product details will be shown here -->
+    <p style="text-align:center; color:#777;">Loading product...</p>
+</div>
+
+<footer>
+    <p>ShopEasy &copy; 2025. All rights reserved.</p>
+</footer>
+
+<script src="app.js"></script>
+<script>
+    // get the product id from the URL
+    function getProductIdFromURL() {
+        var params = new URLSearchParams(window.location.search);
+        return parseInt(params.get("id"));
+    }
+
+    // show the product details on this page
+    function showProductDetail() {
+        var id = getProductIdFromURL();
+        var container = document.getElementById("product-detail-container");
+
+        // find the matching product
+        var product = null;
+        for (var i = 0; i < products.length; i++) {
+            if (products[i].id === id) {
+                product = products[i];
+                break;
+            }
+        }
+
+        if (!product) {
+            container.innerHTML = "<p style='text-align:center;color:red;'>Product not found!</p>";
+            return;
+        }
+
+        container.innerHTML = `
+            <div class="product-detail">
+                <img src="${product.image}" alt="${product.name}">
+                <div class="product-detail-info">
+                    <h2>${product.name}</h2>
+                    <div class="price">₹${product.price}</div>
+                    <p>${product.description}</p>
+                    <button class="btn" onclick="addToCart(${product.id})">Add to Cart</button>
+                    <br><br>
+                    <a href="index.html" style="color:#3498db;">← Back to Products</a>
+                </div>
+            </div>
+        `;
+    }
+
+    window.onload = function() {
+        showProductDetail();
+        updateCartCount();
+        checkLoginStatus();
+    };
+</script>
+</body>
+</html>

@@ -1,0 +1,51 @@
+[
+  {
+    "id":1,
+    "name":"Guitar",
+    "price":2670,
+    "description":"A Premium Brown Colour Ukelele with Nylon strings",
+    "image":"https://images.unsplash.com/photo-1556449895-a33c9dba33dd?w=600&auto=format&fit=crop"
+  },
+  {
+    "id": 2,
+    "name": "Wireless Headphones",
+    "price": 1299,
+    "description": "Good quality wireless headphones with noise cancellation.",
+    "image": "https://images.unsplash.com/photo-1505740420928-5e560c06d30e?w=400&h=300&fit=crop"
+  },
+  {
+    "id": 3,
+    "name": "Running Shoes",
+    "price": 2499,
+    "description": "Comfortable running shoes with good grip.",
+    "image": "https://images.unsplash.com/photo-1542291026-7eec264c27ff?w=400&h=300&fit=crop"
+  },
+  {
+    "id": 4,
+    "name": "Smart Watch",
+    "price": 3999,
+    "description": "Track your fitness, get notifications and check time.",
+    "image": "https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=400&h=300&fit=crop"
+  },
+  {
+    "id": 5,
+    "name": "Backpack",
+    "price": 899,
+    "description": "Spacious backpack with laptop compartment.",
+    "image": "https://images.unsplash.com/photo-1553062407-98eeb64c6a62?w=400&h=300&fit=crop"
+  },
+  {
+    "id": 6,
+    "name": "Sunglasses",
+    "price": 599,
+    "description": "UV protection sunglasses with lightweight frame.",
+    "image": "https://images.unsplash.com/photo-1572635196237-14b3f281503f?w=400&h=300&fit=crop"
+  },
+  {
+    "id": 7,
+    "name": "Water Bottle",
+    "price": 299,
+    "description": "Stainless steel bottle, keeps cold 12 hours.",
+    "image": "https://images.unsplash.com/photo-1602143407151-7111542de6e8?w=400&h=300&fit=crop"
+  }
+]
