@@ -1,0 +1,43 @@
+🛒 ShopEasy - eCommerce Web Application
+📌 Overview
+ShopEasy is a full-stack eCommerce web application that allows users to browse products, add items to cart, and manage purchases seamlessly. It provides a smooth and responsive shopping experience.
+________________________________________
+🚀 Features
+•	🛍️ Product listing and browsing
+
+•	🛒 Add to cart and remove items
+
+•	💳 Checkout system (basic)
+
+•	📱 Responsive design
+________________________________________
+🛠️ Tech Stack
+•	Frontend: HTML, CSS, JavaScript
+
+•	Backend: Node.js, Express.js
+
+•	Database: (if used, mention MongoDB / JSON)
+________________________________________
+⚙️ Installation & Setup
+1.	Clone the repository
+        https://github.com/552006preet/Code_Alpha__Ecommerce-store
+2.	Navigate to project folder
+cd ecommerce
+3.	Install dependencies
+npm install
+4.	Run the server
+node server.js
+________________________________________
+📈 Future Improvements
+•	User authentication
+
+•	Payment gateway integration
+
+•	Order history
+
+•	Admin dashboard
+
+________________________________________
+👨💻 Author
+Developed by Preet
+________________________________________
